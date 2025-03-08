@@ -1,10 +1,8 @@
-
-
 body {
     padding: 0;
     margin: 0;
     color: lightgray;
-    font:arial,sans-serif,helvetica;
+    font: arial, sans-serif, helvetica;
 
 }
 
@@ -18,8 +16,10 @@ body {
     flex-direction: column;
     gap: 100px;
     align-items: center;
+    /* background-color: #001f7c3; */
 }
-.back-vid{
+
+.back-vid {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -30,34 +30,36 @@ body {
 
 /* Header */
 
-header{
-   display: flex;
-   justify-content: space-between;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   align-items: center;
-   height: 70px;
-   background-color: rgb(255, 255, 255,0.123);
-   backdrop-filter: blur(10px);
-   padding: 0, 20px; 
-   box-shadow: 0,0,15px #72a1de8d;
-   z-index: 999;
+header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(255, 255, 255, 0.123);
+    backdrop-filter: blur(10px);
+    padding: 0, 20px;
+    box-shadow: 0, 0, 15px #72a1de8d;
+    z-index: 999;
 
 }
-.left{
+
+.left {
     display: flex;
     align-items: center;
 }
 
-.left img{
+.left img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 0 15px;
 }
-header ul{
+
+header ul {
     display: flex;
     justify-content: center;
     padding: 15px 15px;
@@ -65,33 +67,35 @@ header ul{
     width: 30%;
     border-radius: 50px;
     background-color: rgba(0, 0, 69, 0.30);
-    box-shadow: 0,0,10px #727fde65;
+    box-shadow: 0, 0, 10px #727fde65;
     backdrop-filter: blur(10px);
 
-}   
+}
 
-header ul li{
+header ul li {
     list-style: none;
     margin: 0 10px;
 }
 
-header ul li a{
+header ul li a {
     color: white;
     text-decoration: none;
     font-weight: 700;
     margin: 0 10px;
 }
-.box-items{
+
+.box-items {
     display: flex;
     gap: 10px;
     justify-content: space-around;
     align-items: center;
     color: white;
     font-size: 22px;
-    box-shadow: 0,0,5px rgba(0, 0, 69, 0.25);
+    box-shadow: 0, 0, 5px rgba(0, 0, 69, 0.25);
     cursor: pointer;
 }
-.box-items a{
+
+.box-items a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,27 +109,28 @@ header ul li a{
     margin: 0 10px;
     transition: 0.3s;
 }
-.box-items a:hover{
+
+.box-items a:hover {
     background-color: #727fde;
     color: black;
-    box-shadow: 0,0,5px #727fde;
+    box-shadow: 0, 0, 5px #727fde;
 }
 
 /* blackhole video */
-.blackhole-box{
+.blackhole-box {
     position: absolute;
     top: 0;
-    width:100%;
+    width: 100%;
     justify-content: center;
     mix-blend-mode: lighten;
 
 }
 
-.blackhole-box video{
-   
+.blackhole-box video {
+
     width: 100%;
     margin-top: -23.5%;
-    
+
 }
 
 /* Hero Section */
@@ -136,68 +141,91 @@ header ul li a{
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-    
+
 }
-.typewriter{
+
+.typewriter {
     margin-top: 20px;
 }
+
 /* Typography */
 .typewriter h1 {
     color: #fff;
     font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(130, 21, 97) }
-  }
-  
-.hero-info{
-position: absolute;
-left: 5%;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
 }
-.hero-info .hero-info-title{
+
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(130, 21, 97)
+    }
+}
+
+.hero-info {
+    position: absolute;
+    left: 5%;
+}
+
+.hero-info .hero-info-title {
     color: #727fde;
     padding: 8px 5px;
     border: 1px solid #727fde;
     background-color: #2200493d;
     width: 240px;
-    box-shadow: 0,0,5px #727fde88;
+    box-shadow: 0, 0, 5px #727fde88;
     border-radius: 50px;
-    
+
 }
-.hero-info h1{
-font-size: 40px;
-max-width: 650px;
-font-weight: 700;
-line-height: 70px;
-margin-top: 40px;
-margin-bottom: 30px;
+
+.hero-info h1 {
+    font-size: 40px;
+    max-width: 650px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
-.hero-info p{
+
+.hero-info p {
     max-width: 550px;
     line-height: 25px;
     margin-bottom: 40px;
     font-size: 20px;
 
 }
-.hero-info button{
+
+.hero-info button {
     color: white;
     pad: 14px 35px;
     border: 1px solid #727fdeb4;
@@ -207,13 +235,14 @@ margin-bottom: 30px;
     cursor: pointer;
     transition: 0.3s;
 }
-.hero-info button:hover{
+
+.hero-info button:hover {
     box-shadow: 0 0 15px #727fde86;
 }
 
 /* Gradient Animation*/
-.gradient{
-    background: linear-gradient(to right ,#008baa,#7e42a7,#6600c5,#6070fd,#2a46ff,#0099ff,#008ead);
+.gradient {
+    background: linear-gradient(to right, #008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -221,46 +250,128 @@ margin-bottom: 30px;
     animation: animate-gradient 2.5s linear infinite;
 
 }
-@keyframes animate-gradient{
-    to{
+
+@keyframes animate-gradient {
+    to {
         background-position: 200%;
     }
 }
 
 /* hero 3d */
-.robot{
-position : absolute;
-right:-20%;
-    
+.robot {
+    position: absolute;
+    right: -20%;
+
 }
+
 /* hero video */
 
-.hero-vid-box{
+.hero-vid-box {
     position: absolute;
     right: 3%;
 }
 
-.hero-vid-box video{
-     height: 900px;
-     mix-blend-mode: difference;
+.hero-vid-box video {
+    height: 900px;
+    mix-blend-mode: difference;
 }
 
-/* Scroll down */
-
-.scroll-down{
-    height: 50px;
-    width: 30px;
-    border: 2px solid lightgray;
+/* scroll down  */
+.scrolldown {
+    --color: white;
+    --sizeX: 30px;
+    --sizeY: 50px;
     position: absolute;
-    left: 49%;
-    bottom: 8px;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    left: 50%;
+    left: 50%;
+    bottom: 2%;
+    /* top: 20px; */
+    transform: translate(-50%, -50%);
+    border: calc(var(--sizeX) / 10) solid var(--color);
     border-radius: 50px;
+    box-sizing: border-box;
+    /* margin-bottom: 16px; */
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(211, 211, 211, 0.447);
 }
 
+.scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+}
 
+@keyframes scrolldown-anim {
+    0% {
+        opacity: 0;
+        height: 6px;
+    }
 
+    40% {
+        opacity: 1;
+        height: 10px;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        height: 10px;
+        opacity: 0;
+    }
+
+    100% {
+        height: 3px;
+        opacity: 0;
+    }
+}
+
+.chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+    animation: pulse54012 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+    animation: pulse54012 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse54012 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
 
 
 
@@ -268,17 +379,129 @@ right:-20%;
 
 
 /* BackGround video responsive */
-@media(max-aspect-ratio:16/9){
-    .back-vid{
+@media(max-aspect-ratio:16/9) {
+    .back-vid {
         height: 100%;
         width: auto;
     }
 
 }
-@media(min-aspect-ratio:16/9){
-    .back-vid{
+
+@media(min-aspect-ratio:16/9) {
+    .back-vid {
         height: auto;
         width: 100%;
     }
 
+}
+
+/* info section */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap : 20px;
+    width:100%;
+    height:100%;
+    margin-top: 30px;
+
+}
+.card{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    position: relative;
+    width: auto;
+    height: 40vh;
+    overflow:hidden;
+    border:1px solid gray ;
+    border-radius:20px;
+    background-color: #080020b7;
+    transition: 0.3s;
+}
+.card img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
+.card h1 {
+    position: absolute;
+    margin: 0;
+    bottom: 35%;
+    left: 5%;
+    font-size: 20px;
+    z-index: 1;
+    color: lightgray;
+
+}
+.card p{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    z-index: 1;
+    max-width: 300px;
+    color: gray;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+.card video{
+    margin-top: 10%;
+    width: 70%;
+    height: 54%;
+    object-fit: cover;
+}
+.card button{
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding: 5px 15px;
+    border: 1px solid #727fdeb4;
+    border-radius: 10px;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #727fde86;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.card button:hover{
+    box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+
+}
+.card:hover{
+    box-shadow: 0 0 15px lightgray rgba(211, 211, 211, 0.5);
+}
+.card:nth-child(3){
+    grid-row: span 2;
+    height: 83vh;
+}
+.card:nth-child(3) p{
+    bottom: 12%;
+}
+.card:nth-child(3) h1{
+    bottom: 25%;
+}
+.card:nth-child(4){
+    grid-column: span 2;
+    
+}
+.card:nth-child(4)p{
+    max-width: 650px;
+}
+.card:nth-child(4) h1{
+    bottom: 45%;
 }
